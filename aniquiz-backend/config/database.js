@@ -1,11 +1,29 @@
 const path = require('path');
 
-module.exports = ({ env }) => ({
-  connection: {
-    client: 'sqlite',
+if (process.env.IS_PRODUCTION) {
+  module.exports = ({ env }) => ({
     connection: {
-      filename: path.join(__dirname, '..', env('DATABASE_FILENAME', '.tmp/data.db')),
+      client: 'postgres',
+      connection: {
+        host: env('DATABASE_HOST', 'jmp.blue'),
+        port: env.int('DATABASE_PORT', 5432),
+        database: env('DATABASE_NAME', 'aniquiz'),
+        user: env('DATABASE_USERNAME', 'aniquiz'),
+        password: env('DATABASE_PASSWORD', ''),
+        ssl: env.bool('DATABASE_SSL', false),
+        schema: env("DATABASE_SCHEMA", "aniquiz"),
+      },
     },
-    useNullAsDefault: true,
-  },
-});
+  });
+} else {
+    module.exports = ({ env }) => ({
+      connection: {
+          client: 'sqlite',
+          connection: {
+            filename: path.join(__dirname, '..', env('DATABASE_FILENAME', '.tmp/data.db')),
+          },
+          useNullAsDefault: true,
+        }
+    })
+}
+
