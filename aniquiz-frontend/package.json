@@ -1,5 +1,5 @@
 {
-  "name": "anilist-frontend",
+  "name": "aniquiz-frontend",
   "private": true,
   "scripts": {
     "dev": "next dev",
