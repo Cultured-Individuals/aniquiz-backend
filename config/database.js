@@ -1,6 +1,6 @@
 const path = require('path');
 
-if (process.env.IS_PRODUCTION) {
+if (process.env.IS_PRODUCTION && process.env.IS_PRODUCTION != "false") {
   module.exports = ({ env }) => ({
     connection: {
       client: 'postgres',
