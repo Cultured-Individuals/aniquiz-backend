@@ -1,4 +1,4 @@
-if (process.env.IS_PRODUCTION && process.env.IS_PRODUCTION != "false") {
+if (process.env.SHOW_ADMIN_PANEL !== "true" && process.env.IS_PRODUCTION && process.env.IS_PRODUCTION != "false") {
   module.exports = ({ env }) => ({
     auth: {
       secret: env('ADMIN_JWT_SECRET', '4bf7429b33bdb57dd8759692baae0f9e'),
