@@ -1,6 +1,6 @@
 const path = require('path');
 
-if (process.env.IS_PRODUCTION && process.env.IS_PRODUCTION != "false") {
+if (process.env.USE_SQLITE === "false") {
   module.exports = ({ env }) => ({
     connection: {
       client: 'postgres',
