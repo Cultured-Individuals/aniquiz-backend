@@ -1,0 +1,17 @@
+{
+    "name": "strapi-provider-upload-minio",
+    "version": "1.0.0",
+    "maintainers": [
+        "jonas@jmp.blue"
+    ],
+    "description": "minio upload provider for strapi",
+    "main": "index.js",
+    "scripts": {},
+    "author": "JMP",
+    "license": "AGPL",
+    "dependencies": {
+        "minio": "^7.0.25",
+        "pkgcloud": "^2.2.0",
+        "streamifier": "^0.1.1"
+    }
+}
