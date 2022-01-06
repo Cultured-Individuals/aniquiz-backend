@@ -6,7 +6,7 @@ module.exports = [
       contentSecurityPolicy: {
         directives: {
           'script-src': ["'self'", "'unsafe-inline'", 'cdn.jsdelivr.net'],
-          'style-src': ["'self'", "'unsafe-inline'", 'cdn.jsdelivr.net'],
+          'style-src': ["'self'", "'unsafe-inline'", 'cdn.jsdelivr.net', 'fonts.googleapis.com'],
           'img-src': ["'self'", 'data:', 'cdn.jsdelivr.net', 'strapi.io', `minio-s3.jmp.blue`],
         },
       }
