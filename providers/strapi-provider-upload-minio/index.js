@@ -13,7 +13,6 @@ module.exports = {
 
     return {
       upload(file) {
-        console.log(file)
         return new Promise((resolve, reject) => {
           // upload file to a bucket
           let path = `${file.hash}${file.ext}`
