@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_enums_question_types",
+  "info": {
+    "displayName": "QuestionType",
+    "icon": "question"
+  },
+  "options": {},
+  "attributes": {
+    "questionType": {
+      "type": "enumeration",
+      "enum": [
+        "Places",
+        "CharacterPicture",
+        "Opening",
+        "Ending",
+        "OST",
+        "CharacterThemes",
+        "CharacterSilhouette",
+        "BadPlot",
+        "Emoji",
+        "MultiplePictures",
+        "OpeningScreenshots",
+        "CharacterHair",
+        "CharacterEyes",
+        "Voice",
+        "Uniforms",
+        "FanArt"
+      ],
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_enums_difficulties",
+  "info": {
+    "displayName": "Difficulty",
+    "icon": "gamepad"
+  },
+  "options": {},
+  "attributes": {
+    "difficulty": {
+      "type": "enumeration",
+      "enum": [
+        "Normie",
+        "VeryEasy",
+        "Easy",
+        "Medium",
+        "Hard",
+        "VeryHard",
+        "Otaku"
+      ],
+      "required": true
+    }
+  }
+}
